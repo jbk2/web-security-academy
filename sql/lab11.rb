@@ -1,12 +1,12 @@
-# MUST LOGIN IN BROWSER FIRST AND SET CONFIG HERE
+# MUST LOGIN IN BROWSER FIRST AND SET TRACKINDID & SESSION_COOKIE
 
 require 'uri'
 require 'net/http'
 require 'openssl'
 
-SESSION_COOKIE = "rCCusjNt27GdW5sEwI7EuLt18EMx5VkP"
-TRACKING_ID = "zvqi4WZsCWZf10KI"
-BASE_URI = URI("https://0a03001404b342e680a7531c0047007a.web-security-academy.net/")
+SESSION_COOKIE = "zfqEKDi2TcYyZZNUlvNzLmtB0AijktlQ"
+TRACKING_ID = "KdqEkNBn4YpV5MBT"
+BASE_URI = URI("https://0a2a0095048f06d780fafd0400070043.web-security-academy.net/")
 CHARS = ('a'..'z').to_a.concat((0..9).to_a)
 ASCII_MIN = 32
 ASCII_MAX = 126
