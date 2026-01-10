@@ -76,7 +76,6 @@ def find_ASCII_at(char_no, min_ASCII=ASCII_MIN, max_ASCII=ASCII_MAX)
   mid_ASCII = (min_ASCII + max_ASCII) / 2
 
   sql = char_test_sql(char_no, '>', mid_ASCII).gsub(/[\r\n]/, "")
-  puts sql
   req = built_request(sql, SESSION_COOKIE)
   response = http_client.request(req)
   is_above_mid = server_error?(response.body, "Internal Server Error")
